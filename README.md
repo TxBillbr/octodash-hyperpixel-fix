@@ -26,7 +26,7 @@ curl -sSL https://get.pimoroni.com/hyperpixel4 | bash
 7. Reboot.
   
 ### Troubleshooting
-If you only get a black screen with the backlight on, chances are that i2c, spi, or i2s are enabled in the config.txt. They *must* be commented out for the solution to work. Pimoroni directly manage those capabilities.
+If you only get a black screen with the backlight on, chances are that i2c, spi, or i2s are enabled in the config.txt. They *must* be commented out for the solution to work. Pimoroni directly manages those capabilities from their driver.
 
 ## Step 3 - Install OctoDash
 1. Follow the published instructions for installing OctoDash<br>https://github.com/UnchartedBull/OctoDash
