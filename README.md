@@ -1,5 +1,5 @@
 # HyperPixel 4.0 on Raspberry Pi 4B
-Getting the Pimoroni HyperPixel 4.0 setup correctly and operational on a Raspberry Pi 4B turned out to be a voyage of discovery. I have captured the results here for myself and others. I have captured my config.txt (Raspian Buster) in the repo.
+Getting the Pimoroni HyperPixel 4.0 setup correctly and operational on a Raspberry Pi 4B turned out to be a voyage of discovery. I have captured the results here for myself and others. I have included my working config.txt (Raspian Buster) in the repo.
 
 ## Getting Ready
 It is important to understand that Pimoroni uses *ALL* of the GPIO pins on the pi.
