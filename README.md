@@ -27,6 +27,8 @@ curl -sSL https://get.pimoroni.com/hyperpixel4 | bash
   
 ### Troubleshooting
 If you only get a black screen with the backlight on, chances are that i2c, spi, or i2s are enabled in the config.txt. They *must* be commented out for the solution to work. Pimoroni directly manages those capabilities from their driver.
+> If you have upgraded to the 5.4 kernel, it is possible to roll back to the 4.19.118 kernel by 
+> using **sudo rpi-update e1050e8492**, which will allow the screen to run correctly. You can see the version of your kernel using **uname -r** on a console or ssh session.
 
 ## Step 3 - Install OctoDash
 1. Follow the published instructions for installing OctoDash<br>https://github.com/UnchartedBull/OctoDash
