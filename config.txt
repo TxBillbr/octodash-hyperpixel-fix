@@ -67,7 +67,7 @@ max_framebuffers=2
 start_x=1
 gpu_mem=128
 
-dtoverlay=hyperpixel4-common:rotate
+dtoverlay=hyperpixel4-common:rotate,touchscreen-swapped-x-y
 display_lcd_rotate=3
 dtoverlay=hyperpixel4-0x14
 dtoverlay=hyperpixel4-0x5d
