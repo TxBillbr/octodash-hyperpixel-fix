@@ -41,3 +41,7 @@ Pimoroni Github - https://github.com/pimoroni/hyperpixel4<br>
 > Relevant Issue: https://github.com/pimoroni/hyperpixel4/issues/39
 
 
+### Tested on
+Pi4B 1G Raspian 4.7 kernel - Passed
+Pi4B 4G Raspian 4.7 kernel - Passed
+Pi4B 1G Raspian 5.4 kernel - Failed (working through it currently)
