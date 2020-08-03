@@ -18,7 +18,7 @@ curl -sSL https://get.pimoroni.com/hyperpixel4 | bash
 
 ```
 4. Fixup the /boot/config.txt file to rotate the screen to landscape, and disable vc4-fkms-v3d dtbo.
-   1. Add *:rotate* to the end of the first hyperpixel overlay line
+   1. Add *:rotate,touchscreen-swapped-x-y* to the end of the first hyperpixel overlay line
    2. Comment out all *dtoverlay=vc4-fkms-v3d* lines in the file
    3. Add a line *display_lcd_rotate=3* at the end of the file
 5. Reboot. <br>The screen should come on and display a console if running buster-lite or a desktop if running full Raspian.
