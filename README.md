@@ -1,5 +1,5 @@
 # HyperPixel 4.0 on Raspberry Pi 4B
-Getting the Pimoroni HyperPixel 4.0 setup correctly and operational on a Raspberry Pi 4B so I could run OctoDash turned out to be a voyage of discovery. I have captured the results so I don't have to remember what I did and make it public in case it helps someone else. If you are reading this and trying to achieve the same, I have captured my config.txt (Raspian Buster) in the repo.
+Getting the Pimoroni HyperPixel 4.0 setup correctly and operational on a Raspberry Pi 4B turned out to be a voyage of discovery. I have captured the results here for myself and others. I have captured my config.txt (Raspian Buster) in the repo.
 
 ## Getting Ready
 It is important to understand that Pimoroni uses *ALL* of the GPIO pins on the pi.
