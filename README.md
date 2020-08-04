@@ -46,4 +46,4 @@ Pimoroni Github - https://github.com/pimoroni/hyperpixel4<br>
 ### Tested on
 Pi4B 1G Raspian 4.7 kernel - Passed<br>
 Pi4B 4G Raspian 4.7 kernel - Passed<br>
-Pi4B 1G Raspian 5.4 kernel - <span style="color:red">Failed</span>  Waiting on Pimoroni and pilinux folks. <br>
+Pi4B 1G Raspian 5.4 kernel - Testing the Pimoroni fix at  https://github.com/pimoroni/hyperpixel4/tree/patch-pi4-i2c-fix<br>
