@@ -46,4 +46,4 @@ Pimoroni Github - https://github.com/pimoroni/hyperpixel4<br>
 ### Tested on
 Pi4B 1G Raspian 4.7 kernel - Passed<br>
 Pi4B 4G Raspian 4.7 kernel - Passed<br>
-Pi4B 1G Raspian 5.4 kernel - Testing the Pimoroni fix at  https://github.com/pimoroni/hyperpixel4/tree/patch-pi4-i2c-fix<br>
+Pi4B 1G Raspian 5.4 kernel - Use the Pimoroni fix at  https://github.com/pimoroni/hyperpixel4/tree/patch-pi4-i2c-fix. The rotate commands will not work correctly, but the changes listed above should work to deal with the screen rotation.<br>
