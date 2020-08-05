@@ -2,9 +2,9 @@
 Getting the Pimoroni HyperPixel 4.0 setup correctly and operational on a Raspberry Pi 4B turned out to be a voyage of discovery. I have captured the results here for myself and others. I have included my working config.txt (Raspian Buster) in the repo. This is specifically for the Pi 4B versions. Pi3 and earlier do not have these issues. It is highly recommended that you make a backup of your Octoprint configuration. This can be done from the web UI by going to settings, and clicking on **Backup & Restore**. Click on the **Create backup now** button and wait for completion. Copy the file from ~pi/.octoprint/data/backup/<backupfilename>.zip using your favorite transfer program. Try [WinSCP](https://winscp.net/) if you don't have something already installed. Mac and Linux folks have sftp at their disposal.
 
 ## Getting Ready
-It is important to understand that Pimoroni uses *ALL* of the GPIO pins on the pi. Also the order of installation is important. You *can* install the screen after OctoDash is installed, but it can create situations of finding the where the video is going. In my case, since I use MobaXterm, OctoDash came up fullscreen on my 30" monitor. :D 
+It is important to understand that Pimoroni uses *ALL* of the GPIO pins on the pi. Also the order of installation is important. You *can* install the screen after OctoDash is installed, but it can create situations of finding the where the video is going. In my case, since I use MobaXterm, OctoDash came up fullscreen on my 30" monitor. :satisfied:
 
-Making the screen work is easiest if one starts with a fresh Octopi install and not changing **ANYTHING** other than what the installation instructions tell you or do for you until after the screen is up and working.
+Making the screen work is easiest if one starts with a fresh Octopi install and not changing **ANYTHING** other than what the installation instructions tell you do until after the screen is up and working.
 
 ## Step 1 - Install OctoPi
 Follow the published instructions for getting OctoPi installed and running. https://github.com/guysoft/OctoPi
