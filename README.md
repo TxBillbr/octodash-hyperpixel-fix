@@ -79,23 +79,42 @@ I could not get the Hyperpixel rotation commands to work in any of my testing. S
 4. Comment out all *dtoverlay=vc4-fkms-v3d* lines in the file
 5. reboot
 
-**Hint** When first trying to figure out if the touch is oriented correctly, you can edit the ~pi/.bashrc file and comment out the "no_cursor" startup so that you get a cursor on the display. Then you can easily tell when the x and y are the correct direction, flipped, or inverted. To do this, change
-```
-if [ -z "$SSH_CLIENT" ] || [ -z "$SSH_TTY" ]; then
-    xinit -- -nocursor
-fi
+> **Hint** When first trying to figure out if the touch is oriented correctly, 
+> you can edit the ~pi/.bashrc file and comment out the "no_cursor" startup so 
+> that you get a cursor on the display. Then you can easily tell when the x 
+> and y are the correct direction, flipped, or inverted. To do this, change
+> ```bash
+> if [ -z "$SSH_CLIENT" ] || [ -z "$SSH_TTY" ]; then
+>     xinit -- -nocursor
+> fi
+> ```
+>
+> to:
+> 
+> ```bash
+> if [ -z "$SSH_CLIENT" ] || [ -z "$SSH_TTY" ]; then
+>     xinit
+>     # -- -nocursor
+> fi
+> ```
+>
 
-```
-to:
-```
-if [ -z "$SSH_CLIENT" ] || [ -z "$SSH_TTY" ]; then
-    xinit
-    # -- -nocursor
-fi
-```
->
-> With a little luck and perserverence you should have the OctoDash "Hey there!" fullscreen on your Hyperpixel display.
->
+|------------------------------------------------------------------------------------------------------------------------|
+
+| **With a little luck and perserverence you should have the OctoDash "Hey there!" fullscreen on your Hyperpixel display.**| 
+|---|
+
+> **Hint: ** If you are setting up OctoDash without a keyboard attached to the pi, install **xdotool**. 
+> See https://github.com/UnchartedBull/OctoDash/wiki/Setup-&-Settings#setup-without-keyboard for 
+> more information. This is especially useful for the API key. where you can do something like open 
+> a page to OctoPrint and an ssh session to the pi. Copy the API key from the settings and paste into
+> the ssh command line.
+> ```bash
+> # place the cursor in the api key text box and then run.
+> xdotool mousemove 530 340
+> xdotool type DEADBEEF000ABCDEF98012
+> ```
+---
 
 ### References
 
