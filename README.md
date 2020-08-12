@@ -1,7 +1,9 @@
 # HyperPixel 4.0 on Raspberry Pi 4B
 Getting the Pimoroni HyperPixel 4.0 setup correctly and operational on a Raspberry Pi 4B turned out to be a voyage of discovery. I have captured the results here for myself and others. I have included my working config.txt (Raspian Buster) in the repo. This is specifically for the Pi 4B versions. Pi3 and earlier do not have these issues. It is highly recommended that you make a backup of your Octoprint configuration. This can be done from the web UI by going to settings, and clicking on **Backup & Restore**. Click on the **Create backup now** button and wait for completion. Copy the file from ~pi/.octoprint/data/backup/<backupfilename>.zip using your favorite transfer program. Try [WinSCP](https://winscp.net/) if you don't have something already installed. Mac and Linux folks have sftp at their disposal.
    
-# AS OF 4Aug2020 Drivers are still not working for systems upgraded to 5.4 kernels. I recommend staying on 4.19 (or anything 4.x) as these instructions will allow your Pimoroni Hyperpixel 4.0 to operate!
+### AS OF 12Aug2020 Drivers are working for systems upgraded to 5.4 kernels. However, rotation from portrait mode is still a problem. I recommend staying on 4.19 (or anything 4.x) as these instructions will allow your Pimoroni Hyperpixel 4.0 to operate!
+
+If you want to upgrade your Pi4 (or already have) to the latest versions, you *can* downgrade just your Pi Firmware and kernel by using **rpi_update e1050e9482**. The engineering team recommends against this (See Gadgetoid's comment on 3Aug2020 at https://github.com/pimoroni/hyperpixel4/issues/81. You are urged to read this github issue as it details exactly what is happening and everything that has been attempted thus far.
 
 ## Getting Ready
 It is important to understand that Pimoroni uses *ALL* of the GPIO pins on the pi. Also the order of installation is important. You *can* install the screen after OctoDash is installed, but it can create situations of finding the where the video is going. In my case, since I use MobaXterm, OctoDash came up fullscreen on my 30" monitor. :satisfied:
@@ -121,11 +123,12 @@ I could not get the Hyperpixel rotation commands to work in any of my testing. S
 OctoPi Github - https://github.com/guysoft/OctoPi<br>
 OctoDash Github - https://github.com/UnchartedBull/OctoDash<br>
 Pimoroni Github - https://github.com/pimoroni/hyperpixel4<br>
-> Relevant Issue: https://github.com/pimoroni/hyperpixel4/issues/39
+> Relevant Issue: https://github.com/pimoroni/hyperpixel4/issues/81
 
 
 ### Tested on
 Pi4B 1G, 4G Raspian 4.7 kernel - Passed<br>
 Pi4B 1G, 4G Raspian 5.4 kernel - Failed using the Pimoroni fix at  https://github.com/pimoroni/hyperpixel4/tree/patch-pi4-i2c-fix.<br>
+  Screen is operational, but in portrait mode. At this point waiting for rotation issues to be resolved.
 
 > Kudos to the Pimoroni team who have been in rapid response mode, working to get this resolved so quickly.
