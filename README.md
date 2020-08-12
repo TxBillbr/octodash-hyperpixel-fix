@@ -102,7 +102,6 @@ I could not get the Hyperpixel rotation commands to work in any of my testing. S
 >
 
 |------------------------------------------------------------------------------------------------------------------------|
-
 | **With a little luck and perserverence you should have the OctoDash "Hey there!" fullscreen on your Hyperpixel display.**| 
 |---|
 
