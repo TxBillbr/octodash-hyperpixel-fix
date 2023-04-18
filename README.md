@@ -70,7 +70,7 @@ If you only get a black screen with the backlight on, chances are that i2c, spi,
 ## Step 3 - Install OctoDash
 1. Follow the published instructions for installing OctoDash<br>https://github.com/UnchartedBull/OctoDash. This will take a bit of time as it installs a big chunk of the X-windows system to acheived the desired environment. 
 ```
-bash <(wget -qO- https://github.com/UnchartedBull/OctoDash/raw/master/scripts/install.sh)
+bash <(wget -qO- https://github.com/UnchartedBull/OctoDash/raw/main/scripts/install.sh)
 ```
 
 ## Step 4 - Rotation
